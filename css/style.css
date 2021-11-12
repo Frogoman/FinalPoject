@@ -1,0 +1,160 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Jura&display=swap');
+@font-face {
+    font-family: Cafenero;
+    src: url(../sources/fonts/Cafe-Nero-M54.ttf);
+}
+
+
+
+/* ---- Modifiers ---- */
+*{
+    font-family: 'Jura';
+    color: #fff;
+}
+
+body{
+    background-color: #ffffff;
+    min-height: 3000px;
+    overflow: overlay;
+}
+
+nav{
+    background-color: #17161E;
+}
+
+
+
+/* ---- Classes ---- */
+.cafenero{
+    font-family: 'Cafenero';
+    letter-spacing: 2px;
+}
+
+.nav-style{
+    height:auto;
+    align-items: center;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.nav-top{
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+
+.nav-text{
+    margin: 0 15px 0 15px;
+    color: #fff !important;
+}
+
+.nav-text:hover{
+    color: rgb(197, 197, 197) !important;
+}
+
+.logo-style{
+    width: 120px;
+    transition: 0.4s;
+}
+
+.logo-img{
+    width: 100px;
+    margin: 10px;
+    transition: 0.4s;
+}
+
+.active{
+    color: rgb(193, 240, 255) !important;
+}
+
+.nav-logo-small{
+    height: 0px;
+    width: 0px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+
+
+/* ---- Scroll Bar ---- */
+::-webkit-scrollbar {
+    width: 16px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #17161e00;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border: 4px solid transparent;
+    border-radius: 50px;
+    background-color: rgb(107, 107, 107);
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(148, 148, 148);
+}
+
+
+
+/* ---- IDs ---- */
+
+
+
+
+/* ---- Common media classes ---- */
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .nav-style{
+        align-items: baseline;
+        padding: 10px;
+    }
+
+    .logo-style, .logo-img{
+        width: 0px;
+        height: 0px;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .nav-logo-small{
+        visibility:visible;
+        height: 50px;
+        width: 50px;
+        padding: 5px;
+    }
+}
+
+/* Small devices (landscape phones, entre 576px y 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/* Medium devices (tablets, entre 768px y 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+}
+
+/* Large devices (desktops, entre 992px y 1199.98) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    
+}
+
+/* Extra large devices (large desktops, entre 1200px y 1399.98px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    
+}
+
+/* Extra large devices (large desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+}
+    
