@@ -25,6 +25,7 @@ nav{
 
 
 
+
 /* ---- Classes ---- */
 .cafenero{
     font-family: 'Cafenero';
@@ -75,6 +76,30 @@ nav{
     width: 0px;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
+}
+
+.video-source{
+    position: aboslute;
+    right: 0;
+    z-index: 0;
+    min-width: auto;
+    min-height: auto;
+    z-index: -100;
+    width: 100%;
+    height: 100vh;
+    background-color: #b2b2b2;
+}
+
+.main-header{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.round-border-pic{
+    border-radius: 40px;
 }
 
 
