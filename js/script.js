@@ -19,7 +19,8 @@ var vid = document.getElementById("inabakumori");
 vid.volume = 0.05;
 
 
-/* ---- AA ---- */
+/* ---- Video Size ---- */
+
 
 
 
