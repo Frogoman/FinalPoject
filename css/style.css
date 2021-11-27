@@ -81,7 +81,7 @@ nav{
 .video-source{
     position: aboslute;
     right: 0;
-    z-index: 0;
+    z-index: -100;
     min-width: auto;
     min-height: auto;
     z-index: -100;
