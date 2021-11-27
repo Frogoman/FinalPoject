@@ -104,7 +104,7 @@ nav{
 
 
 
-/* ---- Scroll Bar ---- */
+/* ---- Scroll Bar ----
 ::-webkit-scrollbar {
     width: 16px;
 }
@@ -122,7 +122,7 @@ nav{
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: rgb(148, 148, 148);
-}
+} */
 
 
 
