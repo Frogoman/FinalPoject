@@ -1,7 +1,7 @@
 /* ---- Scroll ---- */
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {ScrollFunction()};
 
-function scrollFunction() {
+function ScrollFunction() {
   	if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     	document.getElementById("logo").style.width = "40px";
     	document.getElementById("logo").style.margin = "5px";
@@ -15,26 +15,42 @@ function scrollFunction() {
 
 
 /* ---- Video Volume ---- */
-var vid = document.getElementById("inabakumori");
-vid.volume = 0.05;
+	// var vid = document.getElementById("inabakumori");
+	// vid.volume = 0.05;
 
 
 /* ---- Form Validation ---- */
-(function () {
-	'use strict'
+document.addEventListener('DOMContentLoaded', (function () {  
 	var forms = document.querySelectorAll('.needs-validation')
-	Array.prototype.slice.call(forms)
-	  .forEach(function (form) {
-		form.addEventListener('submit', function (event) {
-		  if (!form.checkValidity()) {
-			event.preventDefault()
-			event.stopPropagation()
-		  }
   
-		  form.classList.add('was-validated')
-		}, false)
-	  })
-  })()
+	Array.prototype.slice.call(forms)
+	  	.forEach(function (form) {
+			form.addEventListener('submit', function (event) {
+				if (!form.checkValidity()) {
+					event.preventDefault()
+					event.stopPropagation()
+				}
+				form.classList.add('was-validated')
+				
+			}, false)
+		})
+
+	$('#inputPhone').keyup(function() {
+		if (isNaN( parseInt(document.getElementById("inputPhone").value) ) ) {
+			document.getElementById("labelPhone").innerHTML = "Input a number";
+		} else {
+			document.getElementById("labelPhone").innerHTML = "Invalid Input";
+		}
+	})
+	
+	$('#inputZip').keyup(function() {
+		if (isNaN( parseInt(document.getElementById("inputZip").value) ) ) {
+			document.getElementById("labelZip").innerHTML = "Input a number";
+		} else {
+			document.getElementById("labelZip").innerHTML = "Invalid Input";
+		}
+	})
+  })())
 
 
 
