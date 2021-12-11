@@ -59,63 +59,70 @@
 
         <div class="form-div">
             <form action="https://postman-echo.com/get" method="get" class="row g-3 needs-validation" novalidate>
-                <div class="col-md-6 form-floating">
+                <div class="col-md-6 col-sm-12 form-floating">
                     <input type="text" class="form-control form-div-input" id="inputName" placeholder="Name" required>
                     <label  class="form-label" for="inputName">Name</label>
                     <div class="valid-feedback">Looks good!</div>
-                    <div class="invalid-feedback">Invalid Input</div>
+                    <div class="invalid-feedback">You cant leave this empty</div>
                 </div>
 
-                <div class="col-md-6 form-floating">
+                <div class="col-md-6 col-sm-12 form-floating">
                     <input type="text" class="form-control form-div-input" id="inputSurname" placeholder="Surname" required>
                     <label  class="form-label" for="inputSurname">Surname</label>
                     <div class="valid-feedback">Looks good!</div>
-                    <div class="invalid-feedback">Invalid Input</div>
+                    <div class="invalid-feedback">You cant leave this empty</div>
                 </div>
-
+                
                 <div class="col-12 form-floating">
                     <input type="text" class="form-control form-div-input" id="inputAddress" placeholder="Address" required>
                     <label  class="form-label" for="inputAddress">Address</label>
                     <div class="valid-feedback">Looks good!</div>
-                    <div class="invalid-feedback">Invalid Input</div>
+                    <div class="invalid-feedback">You cant leave this empty</div>
                 </div>
-
-                <div class="col-md-6 form-floating">
+                
+                <div class="col-md-6 col-sm-12 form-floating">
                     <input type="text" class="form-control form-div-input" id="inputCity1" placeholder="City" required>
                     <label  class="form-label" for="inputCity1">City</label>
                     <div class="valid-feedback">Looks good!</div>
                     <div class="invalid-feedback">Invalid Input</div>
                 </div>
-
-                <div class="col-md-6 form-floating">
+                
+                <div class="col-md-6 col-sm-12 form-floating">
                     <input type="text" class="form-control form-div-input" id="inputCity2" placeholder="State" required>
                     <label  class="form-label" for="State">State</label>
                     <div class="valid-feedback">Looks good!</div>
                     <div class="invalid-feedback">Invalid Input</div>
                 </div>
 
-                <div class="col-md-6 form-floating">
+                <div class="col-12 col-sm-12 form-floating">
+                    <input type="text" class="form-control form-div-input" id="inputEmail" placeholder="Email" required>
+                    <label  class="form-label" for="inputEmail">Email</label>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Enter a valid email</div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 form-floating">
                     <input type="text" class="form-control form-div-input" id="inputPhone" placeholder="Phone" pattern="[0-9]{9}" required>
                     <label  class="form-label" for="inputPhone">Phone</label>
                     <div class="valid-feedback">Looks good!</div>
                     <div class="invalid-feedback" id="labelPhone">Invalid Input</div>
                 </div>
 
-                <div class="col-md-6 form-floating">
+                <div class="col-md-6 col-sm-12 form-floating">
                     <input type="text" class="form-control form-div-input" id="inputZip" placeholder="Zip" pattern="[0-9]{5}" required autocomplete="456456">
                     <label  class="form-label" for="inputZip">Zip</label>
                     <div class="valid-feedback">Looks good!</div>
                     <div class="invalid-feedback" id="labelZip">Invalid Input</div>
                 </div>
 
-                <div class="col-md-1">
+                <div class="col-md-1 col-sm-12">
                     <label  class="form-label" class="form-check-label" for="inputGender1">Gender:</label>
                 </div>
-                <div class="col-md-2 form-check">
+                <div class="col-md-2 col-sm-6 form-check">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="inputGender1" required>
                     <label class="form-check-label form-label" for="inputGender1">Male</label>
                 </div>
-                <div class="col-md-2 form-check">
+                <div class="col-md-2 col-sm-6 form-check">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="inputGender2" required>
                     <label class="form-check-label form-label" for="inputGender2">Female</label>
                 </div>
