@@ -105,6 +105,26 @@ nav{
 }
 
 
+.form-div-input{
+    background-color: #202020;
+    border-color: #303030;
+    color: rgb(240, 240, 240);
+}
+
+.form-div-input:focus{
+    background-color: #303030;
+    border-color: #404040;
+    color: rgb(240, 240, 240);
+    box-shadow: 0 0 0 0.25rem rgba(193 240 255 / 5%) !important;
+}
+
+.form-div{
+    margin-top:10vh;
+    margin-left:20%;
+    width: 60%;
+}
+
+
 
 /* ---- Scroll Bar ---- */
 ::-webkit-scrollbar {
