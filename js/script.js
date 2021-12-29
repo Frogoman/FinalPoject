@@ -1,3 +1,7 @@
+/* ---- Includes ---- */
+
+
+
 /* ---- Scroll ---- */
 window.onscroll = function() {ScrollFunction()};
 
@@ -42,17 +46,16 @@ document.addEventListener('DOMContentLoaded', (function () {
 			document.getElementById("labelPhone").innerHTML = "Invalid Input";
 		}
 	})
-	
-	$('#inputZip').keyup(function() {
-		if (isNaN( parseInt(document.getElementById("inputZip").value) ) ) {
-			document.getElementById("labelZip").innerHTML = "Input a number";
-		} else {
-			document.getElementById("labelZip").innerHTML = "Invalid Input";
-		}
-	})
-  })())
+})())
 
 
+/* ---- Log Height ---- */
+function LogHeight(){
+	var body = document.body
+	var html = document.documentElement;
 
+	var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+	console.log(height);
+}
 
 
