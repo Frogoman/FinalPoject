@@ -41,6 +41,13 @@ p{
     margin-bottom: 0px;
 }
 
+a{
+    color: #eee;
+}
+a:hover{
+    color: #999;
+}
+
 span.reverse {
     unicode-bidi: bidi-override;
     direction: rtl;
@@ -291,7 +298,6 @@ span.reverse {
 
 .timeline-row:nth-child(even) .timeline-content {
     margin-left: 40px;
-    text-align: left;
 }
 
 .timeline-row:nth-child(even) .timeline-content:after {
@@ -329,6 +335,12 @@ span.reverse {
     border-left: 0;
     border-bottom: 0;
     transform: rotate(45deg);
+}
+
+.timeline-img{
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #353535;
 }
 
 
