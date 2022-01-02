@@ -349,6 +349,25 @@ span.reverse {
     border: 2px solid #353535;
 }
 
+.gallery-div{
+    height: 900px;
+}
+
+.gallery-content-div{
+    padding: 2px;
+}
+
+.gallery-img{
+    width: 100%;
+    height: 100%; 
+    object-fit: contain;
+    transition: transform 200ms;
+}
+
+.gallery-img:hover{
+    transform: scale(1.1);
+}
+
 
 
 
@@ -540,3 +559,4 @@ span.reverse {
         display: none;
     }
 }
+
