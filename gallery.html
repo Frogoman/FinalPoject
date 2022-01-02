@@ -52,26 +52,76 @@
          <div class="separator"></div>
         
         <!-- --- Gallery Div --- -->
+        <div>
+            <h1 class="cafenero">Anny<h1>
+        </div>
         <div class="content-div">
-        <div class="container-fluid gallery-div">
-            <div class="row">
-                <div class="col-6 col-lg-4 col-md-4 gallery-content-div">
-                    <img src="/sources/images/annytf_1.png" alt="Anny 1" class="gallery-img">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6 col-lg-4 col-md-4 gallery-content-div">
+                        <img src="/sources/images/annytf_1.png" alt="Anny 1" class="gallery-img" data-bs-toggle="modal" data-bs-target="#annyModal">
+                    </div>
+                    <div class="col-6 col-lg-4 col-md-4 gallery-content-div">
+                        <img src="/sources/images/annytf_2.png" alt="Anny 2" class="gallery-img"  data-bs-toggle="modal" data-bs-target="#annyModal">
+                    </div>
+                    <div class="col-6 col-lg-4 col-md-4 gallery-content-div">
+                        <img src="/sources/images/annytf_3.png" alt="Anny 3" class="gallery-img"  data-bs-toggle="modal" data-bs-target="#annyModal">
+                    </div>
+                    <div class="col-6 col-lg-4 col-md-4 gallery-content-div">
+                        <img src="/sources/images/annytf_4.png" alt="Anny 4" class="gallery-img"  data-bs-toggle="modal" data-bs-target="#annyModal">
+                    </div>
+                    <div class="col-6 col-lg-4 col-md-4 gallery-content-div">
+                        <img src="/sources/images/annytf_5.png" alt="Anny 5" class="gallery-img"  data-bs-toggle="modal" data-bs-target="#annyModal">
+                    </div>
+                    <div class="col-6 col-lg-4 col-md-4 gallery-content-div">
+                        <img src="/sources/images/annytf_6.png" alt="Anny 6" class="gallery-img"  data-bs-toggle="modal" data-bs-target="#annyModal">
+                    </div>
                 </div>
-                <div class="col-6 col-lg-4 col-md-4 gallery-content-div">
-                    <img src="/sources/images/annytf_2.png" alt="Anny 2" class="gallery-img">
-                </div>
-                <div class="col-6 col-lg-4 col-md-4 gallery-content-div">
-                    <img src="/sources/images/annytf_3.png" alt="Anny 3" class="gallery-img">
-                </div>
-                <div class="col-6 col-lg-4 col-md-4 gallery-content-div">
-                    <img src="/sources/images/annytf_4.png" alt="Anny 4" class="gallery-img">
-                </div>
-                <div class="col-6 col-lg-4 col-md-4 gallery-content-div">
-                    <img src="/sources/images/annytf_5.png" alt="Anny 5" class="gallery-img">
-                </div>
-                <div class="col-6 col-lg-4 col-md-4 gallery-content-div">
-                    <img src="/sources/images/annytf_6.png" alt="Anny 6" class="gallery-img">
+            </div>
+        </div>
+                
+        <!-- Modal -->
+        <div class="modal fade" id="annyModal" data-bs-keyboard="true" tabindex="-1" aria-labelledby="annyModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content bg-transparent">
+                    <div id="annyCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#annyCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#annyCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#annyCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#annyCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#annyCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                          <button type="button" data-bs-target="#annyCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item modal-carousel active" data-bs-interval="10000">
+                            <img src="/sources/images/annytf_1.png" class="d-block img-source" alt="Anny 1">
+                          </div>
+                          <div class="carousel-item modal-carousel" data-bs-interval="10000">
+                            <img src="/sources/images/annytf_2.png" class="d-block img-source" alt="Anny 2">
+                          </div>
+                          <div class="carousel-item modal-carousel" data-bs-interval="10000">
+                            <img src="/sources/images/annytf_3.png" class="d-block img-source" alt="Anny 3">
+                          </div>
+                          <div class="carousel-item modal-carousel" data-bs-interval="10000">
+                            <img src="/sources/images/annytf_4.png" class="d-block img-source" alt="Anny 4">
+                          </div>
+                          <div class="carousel-item modal-carousel" data-bs-interval="10000">
+                            <img src="/sources/images/annytf_5.png" class="d-block img-source" alt="Anny 5">
+                          </div>
+                          <div class="carousel-item modal-carousel" data-bs-interval="10000">
+                            <img src="/sources/images/annytf_6.png" class="d-block img-source" alt="Anny 6">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#annyCarousel" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#annyCarousel" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
                 </div>
             </div>
         </div>

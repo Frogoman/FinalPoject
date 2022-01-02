@@ -349,10 +349,6 @@ span.reverse {
     border: 2px solid #353535;
 }
 
-.gallery-div{
-    height: 900px;
-}
-
 .gallery-content-div{
     padding: 2px;
 }
@@ -366,6 +362,11 @@ span.reverse {
 
 .gallery-img:hover{
     transform: scale(1.1);
+}
+
+.modal-carousel{
+    height: 100vh;
+    width: 100vw;
 }
 
 
