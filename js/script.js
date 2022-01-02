@@ -1,5 +1,4 @@
-/* ---- Includes ---- */
-
+/* ---- Imports ---- */
 
 
 /* ---- Scroll ---- */
@@ -47,6 +46,12 @@ document.addEventListener('DOMContentLoaded', (function () {
 		}
 	})
 })())
+
+
+/* ---- Email Hidding ---- */
+function AddMail(dir,nam) {
+	document.write('<li><span class="reverse">' + dir + "@" + nam + '</span></li>');
+}
 
 
 /* ---- Log Height ---- */
