@@ -15,9 +15,8 @@
 
 body{
     background-color: #0e0e10;
-    /* min-height: 3000px; */
+    min-height: 3000px;
     overflow: overlay;
-    padding-bottom: 50px;
 }
 
 nav{
@@ -37,10 +36,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     transition: background-color 5000s ease-in-out 0s;
 }
 
-p{
-    margin-bottom: 0px;
-}
-
 a{
     color: #eee;
 }
@@ -54,6 +49,9 @@ span.reverse {
     direction: rtl;
 }
 
+div.content-div p{
+    margin-bottom: 0px;
+}
 
 
 /* ---- Classes ---- */
@@ -384,6 +382,27 @@ span.reverse {
     height: 100vh;
     width: 100vw;
 }
+
+.footer-div{
+    margin-top: 100px;
+    height: 50px;
+    background-color: #17161E;
+}
+
+.footer-text{
+    padding: 13px;
+    margin: 0px;
+    
+}
+
+.footer-img{
+    text-align: right;
+    height: 30px;
+    margin: auto;
+    padding-right: 10px;
+}
+
+
 
 
 
