@@ -69,7 +69,7 @@ $('.twitter-feed').delegate('#twitter-widget-0', 'DOMSubtreeModified propertycha
 });
 
 var customizeTweetMedia = function () {
-    // CSS Overrides
+    // Scroll-bar style
 	var scroll_bar = '<style type="text/css">' + `
     ::-webkit-scrollbar {
 		width: 16px;
@@ -91,35 +91,43 @@ var customizeTweetMedia = function () {
 	}
 	` + '</style>';
 
+	// Get the twitter timeline frame
 	var twitter_timeline = $('.twitter-feed').find('.twitter-timeline').contents()
+
+	// Set custom scroll-bar
 	twitter_timeline.find('head').append(scroll_bar);
 
+	// Get rid of extra stuff
 	twitter_timeline.find('div.timeline-Header').css('display', 'none');
 	twitter_timeline.find('footer').css('display', 'none');
 	twitter_timeline.find('div.timeline-Body').css('border-width', '0px');
 
+	// Set body background
     twitter_timeline.find('body').css('background-color', '#0e0e10');
 
-    twitter_timeline.find('ol.timeline-Tweetlist').css('background-color', '#0e0e10');
-
+	// Set font and font-size
+    twitter_timeline.find('body').css('font-family', 'Jura');
     twitter_timeline.find('p.timeline-tweet-text').css('font-family', 'Jura');
     twitter_timeline.find('p.timeline-tweet-text').css('font-size', '15px');
-
+	
+	// Set backgrounds for the div and ol to seem transparent
+    twitter_timeline.find('ol.timeline-Tweetlist').css('background-color', '#0e0e10');
     twitter_timeline.find('div.timeline-Tweet').css('background-color', 'transparent');
 
+	// Set background and border for the "Load More" section
     twitter_timeline.find('div.timeline-Viewport').css('background-color', '#0e0e10');
     twitter_timeline.find('div.timeline-LoadMore').css('background-color', '#111');
     twitter_timeline.find('div.timeline-LoadMore').css('border-radius', '20px');
     twitter_timeline.find('button.timeline-LoadMore-prompt').css('background-color', '#111');
     twitter_timeline.find('button.timeline-LoadMore-prompt').css('margin-top', '20px');
 
+	// Set background and border for tweets/retweets
     twitter_timeline.find('li.timeline-TweetList-tweet').css('background-color', '#111');
     twitter_timeline.find('li.timeline-TweetList-tweet').css('border-width', '5px');
     twitter_timeline.find('li.timeline-TweetList-tweet').css('border-radius', '20px');
     twitter_timeline.find('li.timeline-TweetList-tweet').css('border-color', '#353535');
     twitter_timeline.find('li.timeline-TweetList-tweet').css('border-width', '5px');
-    
-	
+    	
     // Call the function on dynamic updates in addition to page load
     twitter_timeline.find('.timeline-TweetList').bind('DOMSubtreeModified propertychange', function () {
         customizeTweetMedia(this);
