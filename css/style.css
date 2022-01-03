@@ -407,7 +407,7 @@ span.reverse {
 }
 
 .content-img-art{
-    width: 30%;
+    height: 700px;
     transition: 500ms;
     border-radius: 20px;
 }
