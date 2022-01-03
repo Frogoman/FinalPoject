@@ -49,9 +49,6 @@ span.reverse {
     direction: rtl;
 }
 
-div.content-div p{
-    margin-bottom: 0px;
-}
 
 
 /* ---- Classes ---- */
@@ -400,6 +397,24 @@ div.content-div p{
     height: 30px;
     margin: auto;
     padding-right: 10px;
+}
+
+.content-img{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    display: block;
+}
+
+.content-img-art{
+    width: 30%;
+    transition: 500ms;
+    border-radius: 20px;
+}
+
+.content-img-art:hover{
+    transform: scale(1.1);
+    border-radius: 2px;
 }
 
 

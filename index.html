@@ -50,18 +50,18 @@
 
         <!-- --- Carousel Div --- -->
         <div>
-            <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+            <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active video-div" data-bs-interval="10000">
                     <img src="sources/images/sokoban_pic.png" class="d-block img-source">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>First slide label</h5>
-                      <p>Some representative placeholder content for the first slide.</p>
+                      <h5>Sokoban</h5>
+                      <p>Sokoban game developed in Z80 Assembly using a Vs Code emulator.</p>
                     </div>
                   </div>
                   <div class="carousel-item video-div" data-bs-interval="10000">
@@ -79,18 +79,61 @@
                     </div>
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
         </div>
-        
 
+		<!-- --- Presentation Div --- -->
+        <div>
+            <div>
+                <h1 class="cafenero">What is this<h1>
+            </div>
+
+            <div class="content-div">
+                <p>Hi, my name is Frogoman and im a currently a 2nd year Computer Science student. This webpage was developed as a university project and as a way for me to showcase my programming projects (uploaded in <a href="https://github.com/Frogoman" target="_blank">Github</a>) and my favourite artists.</p>
+				<p>My favourite things to do are browsing art, playing videogames and programming dumb stuff. Currently the programming languages I can use at a decent level are: HTML + CSS + JS, C#, Python, Z80 Assembly</p>
+					<img class="content-img" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Frogoman&langs_count=10&theme=tokyonight">
+				<p class="mt-5">As i said before, one of my favourite things to do is browsing art, currently my favourite artists are:
+					<a href="https://twitter.com/annytf" target="_blank">Anny</a>, 
+					<a href="https://twitter.com/NeonBeat619" target="_blank">Neonbeat</a>, 
+					<a href="https://twitter.com/meemofumofu" target="_blank">MeeMo</a> and 
+					<a href="https://twitter.com/Deaver1229" target="_blank">Deaver</a> 
+					(my favourite art pieces of each one are displayed in the "<a href="gallery.html">fav art</a>" tab). Being currently this my favourite art piece:
+				</p>
+					<img class="content-img content-img-art" src="/sources/images/deaver_1.png">
+			</div>
+        </div>
+
+		<div class="separator"></div>
+
+		<!-- --- Twitter Feed Div --- -->
+        <div>
+            <div>
+                <h1 class="cafenero">Twitter feed<h1>
+            </div>
+
+            <div class="content-div">
+				<a class="twitter-timeline" data-lang="en" data-theme="dark" height="1200px" href="https://twitter.com/RealFrogoman?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+        
+		<!-- --- Footer Div --- -->
+        <div class="footer-div container-fluid">
+            <div class="row">
+                <p class="col-6 footer-text">Frogoman</p>
+                <div class="col-6 footer-img">
+                    <a href="https://github.com/Frogoman" target="_blank"><img class="footer-img" src="sources/images/github_icon.png"></a>
+                    <a href="https://twitter.com/RealFrogoman" target="_blank"><img class="footer-img" src="sources/images/twitter_icon.png"></a>
+                </div>
+            </div>
+        </div>
     </body>
 
     <script>LogHeight()</script>
