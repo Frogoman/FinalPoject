@@ -63,4 +63,39 @@ function LogHeight(){
 	console.log(height);
 }
 
+/* ---- Modify Twitter Timleine Styles ---- */
+$('.twitter-feed').delegate('#twitter-widget-0', 'DOMSubtreeModified propertychange', function () {
+    customizeTweetMedia();
+});
 
+var customizeTweetMedia = function () {
+    // CSS Overrides  
+	$('.twitter-feed').find('.twitter-timeline').contents().find('div.timeline-Header').css('display', 'none');
+	$('.twitter-feed').find('.twitter-timeline').contents().find('footer').css('display', 'none');
+	$('.twitter-feed').find('.twitter-timeline').contents().find('div.timeline-Body').css('border-width', '0px');
+
+    $('.twitter-feed').find('.twitter-timeline').contents().find('body').css('background-color', '#0e0e10');
+
+    $('.twitter-feed').find('.twitter-timeline').contents().find('ol.timeline-Tweetlist').css('background-color', '#0e0e10');
+
+    $('.twitter-feed').find('.twitter-timeline').contents().find('p.timeline-tweet-text').css('font-family', 'Jura');
+    $('.twitter-feed').find('.twitter-timeline').contents().find('p.timeline-tweet-text').css('font-size', '15px');
+
+    $('.twitter-feed').find('.twitter-timeline').contents().find('div.timeline-Tweet').css('background-color', 'transparent');
+
+    $('.twitter-feed').find('.twitter-timeline').contents().find('div.timeline-LoadMore').css('background-color', '#111');
+    $('.twitter-feed').find('.twitter-timeline').contents().find('div.timeline-LoadMore').css('background-color', '#111');
+    $('.twitter-feed').find('.twitter-timeline').contents().find('button.timeline-LoadMore-prompt').css('background-color', '#111');
+
+    $('.twitter-feed').find('.twitter-timeline').contents().find('li.timeline-TweetList-tweet').css('background-color', '#111');
+    $('.twitter-feed').find('.twitter-timeline').contents().find('li.timeline-TweetList-tweet').css('border-width', '5px');
+    $('.twitter-feed').find('.twitter-timeline').contents().find('li.timeline-TweetList-tweet').css('border-radius', '20px');
+    $('.twitter-feed').find('.twitter-timeline').contents().find('li.timeline-TweetList-tweet').css('border-color', '#353535');
+    $('.twitter-feed').find('.twitter-timeline').contents().find('li.timeline-TweetList-tweet').css('border-width', '5px');
+    
+	
+    // Call the function on dynamic updates in addition to page load
+    $('.twitter-feed').find('.twitter-timeline').contents().find('.timeline-TweetList').bind('DOMSubtreeModified propertychange', function () {
+        customizeTweetMedia(this);
+    });
+}

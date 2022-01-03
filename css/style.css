@@ -407,7 +407,7 @@ span.reverse {
 }
 
 .content-img-art{
-    height: 600px;
+    width: 30%;
     transition: 500ms;
     border-radius: 20px;
 }
@@ -416,8 +416,6 @@ span.reverse {
     transform: scale(1.1);
     border-radius: 2px;
 }
-
-
 
 
 
@@ -501,6 +499,10 @@ span.reverse {
         font-size: 18px;
         margin-top: 20px;
     }
+
+    .content-img-art{
+        width: 90%;
+    }
 }
 
 /* Small devices (landscape phones, entre 576px y 767.98px) */
@@ -514,6 +516,10 @@ span.reverse {
         font-size: 18px;
         margin-top: 20px;
     }
+
+    .content-img-art{
+        width: 70%;
+    }
 }
 
 /* Medium devices (tablets, entre 768px y 991.98px) */
@@ -525,6 +531,10 @@ span.reverse {
 
     .social-p{
         font-size: 16px;
+    }
+
+    .content-img-art{
+        width: 50%;
     }
 }
 
