@@ -140,7 +140,7 @@ var customizeTweetMedia = function () {
 	// Set font and font-size
     twitter_timeline.find('body').css('font-family', 'Jura');
     twitter_timeline.find('p.timeline-tweet-text').css('font-family', 'Jura');
-    twitter_timeline.find('p.timeline-tweet-text').css('font-size', '15px');
+    twitter_timeline.find('p.timeline-tweet-text').css('font-size', '20px');
 	
 	// Set backgrounds for the div and ol to seem transparent
     twitter_timeline.find('ol.timeline-Tweetlist').css('background-color', '#0e0e10');

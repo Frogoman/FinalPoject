@@ -536,12 +536,16 @@ span.reverse {
         width: 80%;
     }
 
+    .content-div p, .content-div li, .content-div span{
+        font-size: 20px;
+    }
+
     .social-p{
         font-size: 16px;
     }
 
     .content-img-art{
-        width: 50%;
+        width: 60%;
     }
 }
 
@@ -552,8 +556,16 @@ span.reverse {
         width: 70%;
     }
 
+    .content-div p, .content-div li, .content-div span{
+        font-size: 20px;
+    }
+
     .timeline:after {
         top: 28vh;
+    }
+
+    .content-img-art{
+        width: 60%;
     }
 }
 
