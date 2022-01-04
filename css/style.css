@@ -404,6 +404,7 @@ span.reverse {
     margin-right: auto;
     margin-top: 30px;
     display: block;
+    transition: 500ms;
 }
 
 .content-img-art{
@@ -412,7 +413,7 @@ span.reverse {
     border-radius: 20px;
 }
 
-.content-img-art:hover{
+.content-img:hover, .content-img-art:hover{
     transform: scale(1.1);
     border-radius: 2px;
 }

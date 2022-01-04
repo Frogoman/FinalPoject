@@ -1,6 +1,7 @@
 /* ---- Imports ---- */
 
 
+
 /* ---- Scroll ---- */
 window.onscroll = function() {ScrollFunction()};
 
@@ -17,9 +18,11 @@ function ScrollFunction() {
 }
 
 
+
 /* ---- Video Volume ---- */
 	// var vid = document.getElementById("inabakumori");
 	// vid.volume = 0.05;
+
 
 
 /* ---- Form Validation ---- */
@@ -48,10 +51,12 @@ document.addEventListener('DOMContentLoaded', (function () {
 })())
 
 
+
 /* ---- Email Hidding ---- */
 function AddMail(dir,nam) {
 	document.write('<li><span class="reverse">' + dir + "@" + nam + '</span></li>');
 }
+
 
 
 /* ---- Log Height ---- */
@@ -62,6 +67,33 @@ function LogHeight(){
 	var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
 	console.log(height);
 }
+
+
+
+/* ---- Change Carousel Image ---- */
+/* -- Anny -- */
+var anny = $('img[name="anny_pic"]');
+for (var i = 0; i < anny.length; i++){
+    anny[i].addEventListener("click", function(event) {
+		$('#annyCarousel').carousel(anny.index(this));
+	});
+}
+/* -- Neonbeat -- */
+var neonbeat = $('img[name="neonbeat_pic"]');
+for (var i = 0; i < neonbeat.length; i++){
+    neonbeat[i].addEventListener("click", function(event) {
+		$('#neonbeatCarousel').carousel(neonbeat.index(this));
+	});
+}
+/* -- Meemo -- */
+var meemo = $('img[name="meemo_pic"]');
+for (var i = 0; i < meemo.length; i++){
+    meemo[i].addEventListener("click", function(event) {
+		$('#meemoCarousel').carousel(meemo.index(this));
+	});
+}
+
+
 
 /* ---- Modify Twitter Timleine Styles ---- */
 $('.twitter-feed').delegate('#twitter-widget-0', 'DOMSubtreeModified propertychange', function () {
