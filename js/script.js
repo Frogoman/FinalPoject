@@ -95,7 +95,7 @@ for (var i = 0; i < meemo.length; i++){
 
 
 
-/* ---- Modify Twitter Timleine Styles ---- */
+/* ---- Modify Twitter Timeline Style ---- */
 $('.twitter-feed').delegate('#twitter-widget-0', 'DOMSubtreeModified propertychange', function () {
     customizeTweetMedia();
 });
