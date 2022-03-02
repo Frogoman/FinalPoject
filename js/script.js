@@ -92,6 +92,13 @@ for (var i = 0; i < meemo.length; i++){
 		$('#meemoCarousel').carousel(meemo.index(this));
 	});
 }
+/* -- Deaver -- */
+var deaver = $('img[name="deaver_pic"]');
+for (var i = 0; i < deaver.length; i++){
+    deaver[i].addEventListener("click", function(event) {
+		$('#deaverCarousel').carousel(deaver.index(this));
+	});
+}
 
 
 
