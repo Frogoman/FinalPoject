@@ -71,11 +71,11 @@ function LogHeight(){
 
 
 /* ---- Change Carousel Image ---- */
-/* -- Anny -- */
-var anny = $('img[name="anny_pic"]');
-for (var i = 0; i < anny.length; i++){
-    anny[i].addEventListener("click", function(event) {
-		$('#annyCarousel').carousel(anny.index(this));
+/* -- Squ -- */
+var squ = $('img[name="squ_pic"]');
+for (var i = 0; i < squ.length; i++){
+    squ[i].addEventListener("click", function(event) {
+		$('#squCarousel').carousel(squ.index(this));
 	});
 }
 /* -- Neonbeat -- */
